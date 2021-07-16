@@ -33,13 +33,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , containers
-    , mtl
-    , parsec
     , pretty-simple
-    , template-haskell
-    , text
-    , transformers
   default-language: Haskell2010
 
 executable Haskell-quick-start-exe
@@ -52,13 +46,7 @@ executable Haskell-quick-start-exe
   build-depends:
       Haskell-quick-start
     , base >=4.7 && <5
-    , containers
-    , mtl
-    , parsec
     , pretty-simple
-    , template-haskell
-    , text
-    , transformers
   default-language: Haskell2010
 
 test-suite Haskell-quick-start-test
@@ -72,11 +60,5 @@ test-suite Haskell-quick-start-test
   build-depends:
       Haskell-quick-start
     , base >=4.7 && <5
-    , containers
-    , mtl
-    , parsec
     , pretty-simple
-    , template-haskell
-    , text
-    , transformers
   default-language: Haskell2010
