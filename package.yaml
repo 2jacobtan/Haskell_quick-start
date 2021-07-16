@@ -1,0 +1,55 @@
+name:                Haskell-quick-start
+version:             0.1.0.0
+github:              "githubuser/Haskell-quick-start"
+license:             BSD3
+author:              "2jacobtan"
+maintainer:          "example@example.com"
+copyright:           "2021 2jacobtan"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/Haskell-quick-start#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- pretty-simple
+# - containers
+# - transformers
+# - mtl
+# - parsec
+# - text
+# - template-haskell
+
+library:
+  source-dirs: src
+
+executables:
+  Haskell-quick-start-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Haskell-quick-start
+
+tests:
+  Haskell-quick-start-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - Haskell-quick-start
