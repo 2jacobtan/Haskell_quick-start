@@ -35,6 +35,30 @@ https://marketplace.visualstudio.com/items?itemName=haskell.haskell
 
 (Windows users with WSL 2) https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
 
+# Test your installation
+
+```sh
+git clone git@github.com:2jacobtan/Haskell_quick-start.git
+cd Haskell_quick-start
+stack ghci src/Example.hs
+```
+
+in the GHCi repl:
+```hs
+*Main> helloWorld 
+[ "Hello"
+, "World"
+]
+*Main> 
+```
+
+**
+
+---
+
+**
+
+# __everything below is optional__
 
 # Customization
 
